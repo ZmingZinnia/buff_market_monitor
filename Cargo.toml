@@ -1,0 +1,13 @@
+[package]
+name = "buff_market_monitor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = {version = "1.0.87"}
+tokio = { version = "1.21.2", features = ["full"] }
+rusqlite = { version = "0.28.0", features = ["bundled"] }
+reqwest = { version = "0.11.12", features = ["blocking"] }
+serde = {version="1.0.87", features=["derive"]}
